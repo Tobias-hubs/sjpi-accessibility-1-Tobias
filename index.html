@@ -28,7 +28,7 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
 <!DOCTYPE html>
 <!-- Vad händer när man kommenterar bort språket? -->
-<!-- <html lang="en"> -->
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -36,11 +36,11 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <link rel="stylesheet" href="style.css">
     <!-- Endast en `<title>` används; flera kan orsaka oväntat beteende och påverka SEO samt tillgänglighet negativt. -->
     <title>A11y News</title>
-    <title>A11y News dupe</title>
 </head>
-
 <body>
-    <!-- Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida. -->
+    <header></header>
+        <!-- H1 används för att -->
+    <!--Navigeringsmeny med dubblett-ID:n, inkonsekvent tabindex, och brutna länkar till en 404-sida.  -->
     <nav class="navigation">
         <span class="nav-item" id="1" tabindex="-1"><a href="404.html" target="_blank">Home</a></span>
         <span class="nav-item" id="1" tabindex="-1"><a href="404.html">World</a></span>
@@ -62,11 +62,10 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
         <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
         <h1>A11y News</h1>
-        <h1></h1>
-
+        
         <div class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
-            <marquee class="headline">Breaking News: ...!</marquee>
+            <h1 class="headline">Breaking News: ...!</h1>
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
                 biotechnology.</p>
@@ -79,28 +78,28 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
             <!-- Bilder visas inte, varför?  (De finns inga, skapa bilder)-->
             <div class="image-container">
-                <img src="/images/ocean.jpg">
-                <img src="/images/city.jpg">
-                <img src="/images/family.jpg">
+                <img alt="ocean" src="/images/ocean.jpg">
+                <img alt="city" src="/images/city.jpg">
+                <img alt="family" src="/images/family.jpg">
             </div>
 
             <p>Access the news by pressing the images</p>
         </div>
 
         <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
-        <div class="article" style="display: none;">
+         <div class="article"></div> <!--style="display: none;"> -->
             <p class="headline">Se en 50MB bild ladda långsamt!</p>
-            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="50000">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500">
         </div>
 
         <!-- Videor kräver mycket prestanda, kan vi ändra eller ta bort för att åstakomma bättre resultat -->
-        <div class="article">
+        <!-- <div class="article">
             <video autoplay muted loop src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
             <img src="http://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif">
         </div>
-    </div>
+    </div> -->
 
-    <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
+    <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text 
     <div id="fake-ad">
         <div class="top-section">
             <div class="image-container">
@@ -113,9 +112,11 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         </div>
         <p class="btext">Click here to collect your money!</p>
     </div>
-
+-->
 
     <script src="script.js" defer></script>
+<footer></footer>
 </body>
+
 
 </html>
