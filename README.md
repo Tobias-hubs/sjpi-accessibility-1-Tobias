@@ -19,5 +19,9 @@ Tar bort den osäkra Gif bilden helt.
  Lagt till bilder igen så att det inte fattas. 
  
  JS-
- Tog bort så att inte tråden blockeras utan bara loggar att en sekund har gått. 
+ Tog bort så att inte tråden blockeras.   
  Ändrat till document.body.innerHTML istället för write som annars rensar sidan efter omladdning. 
+ Tar bort att man inte kan navigera bakåt. 
+ Bakgrundsfärgen ändras med en knapp istället. 
+ Tar bort loggar som spammas i consolen. 
+
