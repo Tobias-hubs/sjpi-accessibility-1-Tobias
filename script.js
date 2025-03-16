@@ -10,13 +10,13 @@ setInterval(() => {
 const footer = document.querySelector("footer");
 footer.innerHTML = `
   <h2 style='color:black;'>Get in touch with us</h2>
-  <p>Contact us</p>
-  <p>Phone: 123456789</p>
-  <p>Email:</p>
+  <p role="heading">Contact us</p>
+  <p role="heading">Phone: 123456789</p>
+  <p role="heading">Email:</p>
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
   <ul id="numberList"></ul>
-  <p id="pageLoaded" style="color: black; font-weight: bold;"></p>
+  <p id="pageLoaded" style="color: black; font-weight: bold role="heading";"></p>
 `;
 // document.body.innerHTML += ;
 // Förhindrar användaren att navigera bakåt
