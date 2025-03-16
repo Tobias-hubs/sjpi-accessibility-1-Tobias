@@ -8,7 +8,7 @@ setInterval(() => {
 // document.body.innerHTML += "<p>Another document.body.innerHTML() call</p>";
 
 document.body.innerHTML += `
-  <h1 style='color:black;'>HELLO FROM DOCUMENT.BODY.InnerHTML()</h1>
+  <p style='color:black;'>HELLO FROM DOCUMENT.BODY.InnerHTML()</p>
   <p>Another document.body.innerHTML() call</p>
   <button id="colorButton">Byt bakgrundsfärg</button>
   <button id="logNumbers">Logga nummer</button>
