@@ -7,6 +7,7 @@ setInterval(() => {
 // document.body.innerHTML += "<h1 style='color:black;'>HELLO FROM DOCUMENT.BODY.InnerHTML()</h1>";
 // document.body.innerHTML += "<p>Another document.body.innerHTML() call</p>";
 
+
 const footer = document.querySelector("footer");
 footer.innerHTML = `
   <h2 style='color:black;'>Get in touch with us</h2>
@@ -15,6 +16,7 @@ footer.innerHTML = `
   <p>Email:</p>
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
+
   <ul id="numberList"></ul>
   <p id="pageLoaded" style="color: black; font-weight: bold;"></p>
 `;

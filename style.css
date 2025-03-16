@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Tungläst typsnitt */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Tungläst typsnitt */
 }
 
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
@@ -147,7 +147,7 @@ a {
 }
 
 /* En "fake ad" med blinkande bakgrund och fast position längst ner */
-#fake-ad {
+/* #fake-ad {
   position: fixed;
   bottom: 0;
   width: 40%;
@@ -161,7 +161,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-}
+} */
 
 /* Sektion med centrerad layout */
 .top-section {
