@@ -16,7 +16,7 @@ footer.innerHTML = `
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
   <ul id="numberList"></ul>
-  <p id="pageLoaded" style="color: green; font-weight: bold;"></p>
+  <p id="pageLoaded" style="color: black; font-weight: bold;"></p>
 `;
 // document.body.innerHTML += ;
 // Förhindrar användaren att navigera bakåt
