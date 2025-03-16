@@ -15,13 +15,19 @@ Tar bort <!-- <title>A11y News dupe</title> --> eftersom den inte gör någon ny
 Lägger till alt attribut på img.
 Tar bort video elementet helt. 
 Tar bort den osäkra Gif bilden helt. 
- Ändrat storlek på <!--<img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500"> --> från 50000 till 500
- Lagt till bilder igen så att det inte fattas. 
+Ändrat storlek på 
+<!--<img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg" width="500"> --> från 50000 till 500
+Lagt till bilder igen så att det inte fattas. 
+Förbättrad navigationen och även lagt den i header. 
+Tagit bort den osynliga texten (egentiligen css)
+Fixat länkarna i nav så den ej ger 404 sida utan det finns nu sidor som heter Home,world,sports,entertainment med en h1 som beskriver att innehållet kommer snart. 
+Tagit bort en del onödiga kommentarer.
+Förbättrar sökfält och knapp, tar bort crosshair och använder pointer i css. 
  
- JS-
- Tog bort så att inte tråden blockeras.   
- Ändrat till document.body.innerHTML istället för write som annars rensar sidan efter omladdning. 
- Tar bort att man inte kan navigera bakåt. 
- Bakgrundsfärgen ändras med en knapp istället. 
- Tar bort loggar som spammas i consolen. 
+JS-
+Tog bort så att inte tråden blockeras.   
+Kodat template strings i js filen till footer istället för write som annars rensar sidan efter omladdning. 
+Tar bort att man inte kan navigera bakåt. 
+Bakgrundsfärgen ändras med en knapp istället. 
+Tar bort loggar som spammas i consolen. 
 

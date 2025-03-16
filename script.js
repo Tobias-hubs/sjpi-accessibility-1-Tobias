@@ -7,14 +7,18 @@ setInterval(() => {
 // document.body.innerHTML += "<h1 style='color:black;'>HELLO FROM DOCUMENT.BODY.InnerHTML()</h1>";
 // document.body.innerHTML += "<p>Another document.body.innerHTML() call</p>";
 
-document.body.innerHTML += `
-  <h1 style='color:black;'>HELLO FROM DOCUMENT.BODY.InnerHTML()</h1>
-  <p>Another document.body.innerHTML() call</p>
-  <button id="colorButton">Byt bakgrundsfärg</button>
-  <button id="logNumbers">Logga nummer</button>
+const footer = document.querySelector("footer");
+footer.innerHTML = `
+  <h2 style='color:black;'>Get in touch with us</h2>
+  <p>Contact us</p>
+  <p>Phone: 123456789</p>
+  <p>Email:</p>
+  <button id="colorButton">Change background</button>
+  <button id="logNumbers">Logg number</button>
   <ul id="numberList"></ul>
-  <p id="pageLoaded" style="color: green; font-weight: bold;"></p>
+  <p id="pageLoaded" style="color: black; font-weight: bold;"></p>
 `;
+// document.body.innerHTML += ;
 // Förhindrar användaren att navigera bakåt
 // history.pushState(null, "", location.href)
 // window.onpopstate = () => history.go(1)
