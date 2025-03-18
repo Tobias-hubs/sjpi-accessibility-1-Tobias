@@ -10,24 +10,15 @@ setInterval(() => {
 const footer = document.querySelector("footer");
 footer.innerHTML = `
   <h2 style='color:black;'>Get in touch with us</h2>
-  <p role="heading">Contact us</p>
-  <p role="heading">Phone: 123456789</p>
-  <p role="heading">Email:</p>
+  <h3>Contact us</h3>
+  <h3>Phone: 123456789</h3>
+  <h3>Email:</h3>
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
   <ul id="numberList"></ul>
-  <p id="pageLoaded" style="color: black; font-weight: bold role="heading";"></p>
+  <h3 id="pageLoaded" style="color: black; font-weight: bold ;"></h3>
 `;
-// document.body.innerHTML += ;
-// Förhindrar användaren att navigera bakåt
-// history.pushState(null, "", location.href)
-// window.onpopstate = () => history.go(1)
 
-// Ändrar bakgrundsfärgen slumpmässigt var 500ms
-// setInterval(() => {
-//   document.body.style.backgroundColor =
-//     "#" + Math.floor(Math.random() * 16777215).toString(16)
-// }, 500)
 document.getElementById("colorButton").addEventListener("click", () => {
   document.body.style.backgroundColor =
     "#" + Math.floor(Math.random() * 16777215).toString(16)
