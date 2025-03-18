@@ -10,16 +10,18 @@ setInterval(() => {
 
 const footer = document.querySelector("footer");
 footer.innerHTML = `
-  <h2 style='color:black;'>Get in touch with us</h2>
+<div style="background-color: #3b3b3b; color: white; padding: 20px;">
+  <h2>Get in touch with us</h2>
   <p>Contact us</p>
   <p>Phone: 123456789</p>
-  <p>Email:</p>
+  <p>Email: A11yNews@email.com</p>
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
 
   <ul id="numberList"></ul>
-  <p id="pageLoaded" style="color: black; font-weight: bold;"></p>
+  <p id="pageLoaded" font-weight: bold;"></p>
 `;
+footer.style.backgroundColor = "3b3b3b";
 // document.body.innerHTML += ;
 // Förhindrar användaren att navigera bakåt
 // history.pushState(null, "", location.href)
