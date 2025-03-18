@@ -12,13 +12,13 @@ const footer = document.querySelector("footer");
 footer.innerHTML = `
 <div style="background-color: #3b3b3b; color: white; padding: 20px;">
   <h2>Get in touch with us</h2>
-  <p role="heading">Contact us</p>
-  <p role="heading">Phone: 123456789</p>
-  <p role="heading">Email: A11yNews@email.com</p>
+  <h3>Contact us</h3>
+  <h3>Phone: 123456789</h3>
+  <h3>Email: A11yNews@email.com</h3>
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
   <ul id="numberList"></ul>
-  <p id="pageLoaded" font-weight: bold role="heading";"></p>
+  <h3 id="pageLoaded" font-weight: bold ;"></h3>
 `;
 
 document.getElementById("colorButton").addEventListener("click", () => {
