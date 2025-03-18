@@ -9,8 +9,8 @@
 /* Ställer in bakgrundsfärg, textfärg och textstil för hela sidan */
 body {
   background: #7d7d7d;
-  color: #f5f5dc;
-  font-size: 30px;
+  color: #ecec93;
+  font-size: 25px;
   text-align: left;
   letter-spacing: 5px;
   word-spacing: 15px;
@@ -31,7 +31,7 @@ a {
   font-size: 20px;
   padding: 20px;
   border: 5px dashed black;
-  cursor: not-allowed;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -48,7 +48,7 @@ a {
   width: 100%;
   margin: auto;
   border: 10px solid pink;
-  background-color: rgba(0, 0, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
 }
 
@@ -195,6 +195,9 @@ a {
   animation: rotateLeftRight 2s infinite alternate ease-in-out;
 }
 
+.footer { 
+  background-color: #3b3b3b;
+}
 /* Nyckelbildning för att rotera bilden åt vänster och höger */
 @keyframes rotateLeftRight {
   0% {
