@@ -57,20 +57,20 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
 
     <div class="input-container">
       <!-- <input type="text" placeholder="Enter text" /> -->
-       <input id="searchInput" type="text" placeholder="Find on page" />
+       <input id="searchInput" type="text" placeholder="Find on page" aria-label="search"/>
       <button id="searchButton">Search</a></button>
     </div>
 
-    <p class="hidden-text">On this site you get the latest news</p>
-    <div class="button">Click here!</div>
+    <p class="hidden-text" role="heading">On this site you get the latest news</p>
+    <button class="button">Click here!</button>
     <div class="container">
       <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
       <h1>A11y News</h1>
 
       <div class="article">
         <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
-        <h1 class="headline">Breaking News: ...!</h1>
-        <p>
+        <h2 class="headline">Breaking News: ...!</h2>
+        <p role="heading">
           Scientists have discovered a new deep-sea fish with bioluminescent
           fins off the coast of Australia. The unnamed species is believed to
           have unique traits that could contribute to future medical research
@@ -90,13 +90,13 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
           <img alt="family" src="images/family.jpg" />
         </div>
 
-        <p>Access the news by pressing the images</p>
+        <p role="heading">Access the news by pressing the images</p>
       </div>
 
       <!-- Allt för stor bild. För att motverka prestanda problem, ha koll på storleken på bilden -->
       <div class="article"></div>
       <!--style="display: none;"> -->
-      <p class="headline">Se en bild på en blomma</p>
+      <p class="headline" role="heading">Se en bild på en blomma</p>
       <img
         alt="flower"
         src="https://upload.wikimedia.org/wikipedia/commons/3/3f/JPEG_example_flower.jpg"

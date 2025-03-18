@@ -12,26 +12,15 @@ const footer = document.querySelector("footer");
 footer.innerHTML = `
 <div style="background-color: #3b3b3b; color: white; padding: 20px;">
   <h2>Get in touch with us</h2>
-  <p>Contact us</p>
-  <p>Phone: 123456789</p>
-  <p>Email: A11yNews@email.com</p>
+  <p role="heading">Contact us</p>
+  <p role="heading">Phone: 123456789</p>
+  <p role="heading">Email: A11yNews@email.com</p>
   <button id="colorButton">Change background</button>
   <button id="logNumbers">Logg number</button>
-
   <ul id="numberList"></ul>
-  <p id="pageLoaded" font-weight: bold;"></p>
+  <p id="pageLoaded" font-weight: bold role="heading";"></p>
 `;
-footer.style.backgroundColor = "3b3b3b";
-// document.body.innerHTML += ;
-// Förhindrar användaren att navigera bakåt
-// history.pushState(null, "", location.href)
-// window.onpopstate = () => history.go(1)
 
-// Ändrar bakgrundsfärgen slumpmässigt var 500ms
-// setInterval(() => {
-//   document.body.style.backgroundColor =
-//     "#" + Math.floor(Math.random() * 16777215).toString(16)
-// }, 500)
 document.getElementById("colorButton").addEventListener("click", () => {
   document.body.style.backgroundColor =
     "#" + Math.floor(Math.random() * 16777215).toString(16)
